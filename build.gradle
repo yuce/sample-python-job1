@@ -8,8 +8,8 @@ version '1.0-SNAPSHOT'
 repositories.mavenCentral()
 
 dependencies {
-    implementation 'com.hazelcast:hazelcast:5.2.0'
-    implementation 'com.hazelcast.jet:hazelcast-jet-python:5.2.0'
+    implementation 'com.hazelcast:hazelcast:5.2.2'
+    implementation 'com.hazelcast.jet:hazelcast-jet-python:5.2.2'
 }
 
 jar.manifest.attributes 'Main-Class': 'org.example.JetJob'

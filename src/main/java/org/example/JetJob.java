@@ -21,7 +21,6 @@ public class JetJob {
                 .writeTo(Sinks.logger());
 
         JobConfig cfg = new JobConfig().setName("python-function");
-        cfg.addClass(JetJob.class);
         HazelcastInstance hz = Hazelcast.bootstrappedInstance();
         hz.getJet().newJob(pipeline, cfg);
     }
